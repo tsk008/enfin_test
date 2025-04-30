@@ -1,0 +1,9 @@
+PostgreSQL DB details
+
+port no: 5432
+database_name : user_db
+pwd: Satheesh@123
+
+To check DB Data
+SELECT user_id, date, start_time, end_time FROM public.weekly_availability;
+SELECT user_id, date, start_time, end_timeFROM public.weekly_blocked_availability;

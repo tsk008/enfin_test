@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "ec7f980b-3fb9-4aa8-b619-9deb3b60f171",
+		"name": "Enfin_userdb_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36418119"
+	},
+	"item": [
+		{
+			"name": "valid_user_availability",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1,2]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/common_free_time?user_ids=1&user_ids=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"common_free_time"
+					],
+					"query": [
+						{
+							"key": "user_ids",
+							"value": "1"
+						},
+						{
+							"key": "user_ids",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid_user_availability",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1,2]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/common_free_time?user_ids=1&user_ids=2&user_ids=3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"common_free_time"
+					],
+					"query": [
+						{
+							"key": "user_ids",
+							"value": "1"
+						},
+						{
+							"key": "user_ids",
+							"value": "2"
+						},
+						{
+							"key": "user_ids",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
